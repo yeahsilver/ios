@@ -9,23 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var currentValue = 0
+    @IBOutlet var priceLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        refresh()
     }
 
-    @IBAction func hello(_ sender: Any) {
-        let alert = UIAlertController(title: "Hello", message:"My First App!!", preferredStyle: .alert) // alert view에 띄워질 메시지 생성
-        let action = UIAlertAction(title:"OK", style: .default, handler:nil) // alert view에서 okay를 눌렀을 경우 현재는 handler가 nil이기에 아무액션도 취하지 않음.
-        alert.addAction(action) // action 추가
-        present(alert, animated: true, completion: nil) // view를 띄움.
-    }
-    
     @IBAction func welcome(_ sender: Any) {
-        let alert = UIAlertController(title: "Welcome", message: "Welcome to my first app!!!", preferredStyle: .alert)
-        let action = UIAlertAction(title :"OK", style: .default, handler:nil)
+        
+        let message = "가격은 ₩\(currentValue)입니다."
+        
+        let alert = UIAlertController(title: "Welcome", message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title :"OK", style: .default, handler:{action in self.refresh()}) // handler에 속성을 넣어줌. action을 취했을 때만 코드를 실행. == closure ({action: ~ }까지.)
+        
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
+    }
+    
+    
+    func refresh(){
+        let randomPrice = arc4random_uniform(10000) + 1
+        currentValue = Int(randomPrice)
+        priceLabel.text = "₩\(currentValue)"
     }
 }
 

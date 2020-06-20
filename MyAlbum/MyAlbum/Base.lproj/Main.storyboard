@@ -15,19 +15,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PO6-8v-dAO">
-                                <rect key="frame" x="190" y="453" width="35" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Hello"/>
-                                <connections>
-                                    <action selector="hello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FqM-QC-ypy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGj-pL-asO">
-                                <rect key="frame" x="175" y="507" width="64" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Welcome">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="₩1000000" textAlignment="center" lineBreakMode="tailTruncation" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgc-XP-Gbj">
+                                <rect key="frame" x="129" y="657" width="158" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" highlightedImage="dog" translatesAutoresizingMaskIntoConstraints="NO" id="ZMQ-VD-6cM">
+                                <rect key="frame" x="47" y="250" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="Ovw-hX-jnd"/>
+                                    <constraint firstAttribute="width" constant="320" id="P6s-Fr-OvE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Pics" textAlignment="natural" lineBreakMode="tailTruncation" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fp8-zo-7I8">
+                                <rect key="frame" x="150" y="152" width="115" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VP4-Nu-ze8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGj-pL-asO">
+                                <rect key="frame" x="139" y="734" width="138" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HEA-aE-Deh"/>
+                                    <constraint firstAttribute="width" constant="100" id="LFe-wL-fUD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="welcome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pI0-QB-5Jw"/>
@@ -35,12 +53,32 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LGj-pL-asO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="49a-sk-qZq"/>
+                            <constraint firstItem="fp8-zo-7I8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="113" id="4Or-r5-SHF"/>
+                            <constraint firstItem="LGj-pL-asO" firstAttribute="top" secondItem="Cgc-XP-Gbj" secondAttribute="bottom" constant="44" id="C4t-5T-glB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LGj-pL-asO" secondAttribute="bottom" constant="75" id="O0a-FD-gxq"/>
+                            <constraint firstItem="LGj-pL-asO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="P4K-60-2Wd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fp8-zo-7I8" secondAttribute="trailing" constant="149" id="aht-yH-Tix"/>
+                            <constraint firstItem="fp8-zo-7I8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="eFA-k3-zrA"/>
+                            <constraint firstItem="Cgc-XP-Gbj" firstAttribute="centerX" secondItem="LGj-pL-asO" secondAttribute="centerX" id="lNe-VN-PSn"/>
+                            <constraint firstItem="ZMQ-VD-6cM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="206" id="mrW-Ia-p4f"/>
+                            <constraint firstItem="ZMQ-VD-6cM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="p1s-aM-Zoa"/>
+                            <constraint firstItem="LGj-pL-asO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="pxY-10-rgj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LGj-pL-asO" secondAttribute="trailing" constant="157" id="vfv-G7-Mgt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="priceLabel" destination="Cgc-XP-Gbj" id="HJb-c0-GtS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57" y="138"/>
+            <point key="canvasLocation" x="-57.971014492753625" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dog" width="1372" height="2024.5"/>
+    </resources>
 </document>
