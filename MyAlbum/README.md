@@ -77,16 +77,4 @@ object: 파티 참석자 / data: 파티의 주소지 method: 파티 즐기기.
   - 크기가 1x / 2x / 3x로 나뉨. 
   - @2x 이런식으로 표기!
 
-- 
-
-- 
-
-- styling image & label
-
-- styling button
-
-- auto layout
-
-- app lcon and display name
-
   
