@@ -15,6 +15,7 @@
 		968A4DF5249F870700473616 /* BountyListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968A4DF4249F870700473616 /* BountyListTests.swift */; };
 		968A4E00249F870700473616 /* BountyListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968A4DFF249F870700473616 /* BountyListUITests.swift */; };
 		968A4E0E249F872600473616 /* BountyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968A4E0D249F872600473616 /* BountyViewController.swift */; };
+		96EA0B8D24A0E07C00AE19FC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EA0B8C24A0E07C00AE19FC /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		968A4DFF249F870700473616 /* BountyListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyListUITests.swift; sourceTree = "<group>"; };
 		968A4E01249F870700473616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		968A4E0D249F872600473616 /* BountyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyViewController.swift; sourceTree = "<group>"; };
+		96EA0B8C24A0E07C00AE19FC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				968A4DDF249F870700473616 /* SceneDelegate.swift */,
 				968A4E0D249F872600473616 /* BountyViewController.swift */,
 				968A4DE3249F870700473616 /* Main.storyboard */,
+				96EA0B8C24A0E07C00AE19FC /* DetailViewController.swift */,
 				968A4DE6249F870700473616 /* Assets.xcassets */,
 				968A4DE8249F870700473616 /* LaunchScreen.storyboard */,
 				968A4DEB249F870700473616 /* Info.plist */,
@@ -262,6 +265,7 @@
 				968A4DDE249F870700473616 /* AppDelegate.swift in Sources */,
 				968A4E0E249F872600473616 /* BountyViewController.swift in Sources */,
 				968A4DE0249F870700473616 /* SceneDelegate.swift in Sources */,
+				96EA0B8D24A0E07C00AE19FC /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
