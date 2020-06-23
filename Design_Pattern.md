@@ -7,12 +7,17 @@
 
 
 
+
+
 ### MVVM (Model - View - ViewModel)
 
 - Model = 데이터 (struct)
 - View = UI요소(UIView, UIViewController)
 - ViewModel = 중계자 (ViewModel)
 <img width="1527" alt="스크린샷 2020-06-23 오후 4 42 15" src="https://user-images.githubusercontent.com/39258902/85374940-80cb6780-b570-11ea-8047-80b57c219bff.png">
+
+
+
 
 
 ### MVC (Model - View - Controller)
@@ -27,6 +32,9 @@
 
 
 
+
+
+
 ### MVC vs MVVM
 
 #### 차이점
@@ -36,10 +44,14 @@
 
  
 
+
+
 #### MVVM 개선점
 
 - ViewController의 역할을 축소함으로써 기술 부채를 줄임.
 - view에 Controller을 구축함으로써 할일이 명확해지게 만들어줌.  할일이 명확해질 수록 수정이 용이 --> 유지 보수 비용이 줄어듦
+
+
 
 
 
@@ -60,11 +72,15 @@
 
 
 
+
+
 ### 리팩터링
 
 - 유지 보수 용이 / 재생 가능 / 기술 부채를 줄이기 위해 코드를 수정하는 과정. 
 
   
+
+
 
 #### 리팩터링 원칙
 
