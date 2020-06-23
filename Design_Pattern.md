@@ -12,9 +12,7 @@
 - Model = 데이터 (struct)
 - View = UI요소(UIView, UIViewController)
 - ViewModel = 중계자 (ViewModel)
-
- <img src="/Users/heoyeeun/Library/Application Support/typora-user-images/스크린샷 2020-06-23 오후 4.28.12.png" alt="스크린샷 2020-06-23 오후 4.28.12" style="zoom:50%;" />
-
+<img width="1527" alt="스크린샷 2020-06-23 오후 4 42 15" src="https://user-images.githubusercontent.com/39258902/85374940-80cb6780-b570-11ea-8047-80b57c219bff.png">
 
 
 ### MVC (Model - View - Controller)
@@ -23,9 +21,9 @@
 
 - View = UI요소 (UIView)
 
-- ####Controller = 중계자 (UIViewController) ==> 기술 부채의 원인.
+- Controller = 중계자 (UIViewController) ==> 기술 부채의 원인.
 
-<img src="/Users/heoyeeun/Library/Application Support/typora-user-images/스크린샷 2020-06-23 오후 4.26.13.png" alt="스크린샷 2020-06-23 오후 4.26.13" style="zoom:50%;" />
+<img width="586" alt="스크린샷 2020-06-23 오후 4 43 46" src="https://user-images.githubusercontent.com/39258902/85375066-b96b4100-b570-11ea-8b2f-273e79c18435.png">
 
 
 
@@ -57,8 +55,7 @@
 
   
 
-![스크린샷 2020-06-23 오후 4.34.22](/Users/heoyeeun/Library/Application Support/typora-user-images/스크린샷 2020-06-23 오후 4.34.22.png)
-
+<img width="479" alt="스크린샷 2020-06-23 오후 4 41 41" src="https://user-images.githubusercontent.com/39258902/85374898-6c876a80-b570-11ea-8574-6ec4014d7d84.png">
 
 
 
