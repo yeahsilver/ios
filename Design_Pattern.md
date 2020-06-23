@@ -7,13 +7,16 @@
 
 
 
+
+
 ### MVVM (Model - View - ViewModel)
 
 - Model = 데이터 (struct)
 - View = UI요소(UIView, UIViewController)
 - ViewModel = 중계자 (ViewModel)
+<img width="1527" alt="스크린샷 2020-06-23 오후 4 42 15" src="https://user-images.githubusercontent.com/39258902/85374940-80cb6780-b570-11ea-8047-80b57c219bff.png">
 
- <img src="/Users/heoyeeun/Library/Application Support/typora-user-images/스크린샷 2020-06-23 오후 4.28.12.png" alt="스크린샷 2020-06-23 오후 4.28.12" style="zoom:50%;" />
+
 
 
 
@@ -23,9 +26,12 @@
 
 - View = UI요소 (UIView)
 
-- ####Controller = 중계자 (UIViewController) ==> 기술 부채의 원인.
+- Controller = 중계자 (UIViewController) ==> 기술 부채의 원인.
 
-<img src="/Users/heoyeeun/Library/Application Support/typora-user-images/스크린샷 2020-06-23 오후 4.26.13.png" alt="스크린샷 2020-06-23 오후 4.26.13" style="zoom:50%;" />
+<img width="586" alt="스크린샷 2020-06-23 오후 4 43 46" src="https://user-images.githubusercontent.com/39258902/85375066-b96b4100-b570-11ea-8b2f-273e79c18435.png">
+
+
+
 
 
 
@@ -38,10 +44,14 @@
 
  
 
+
+
 #### MVVM 개선점
 
 - ViewController의 역할을 축소함으로써 기술 부채를 줄임.
 - view에 Controller을 구축함으로써 할일이 명확해지게 만들어줌.  할일이 명확해질 수록 수정이 용이 --> 유지 보수 비용이 줄어듦
+
+
 
 
 
@@ -57,7 +67,8 @@
 
   
 
-![스크린샷 2020-06-23 오후 4.34.22](/Users/heoyeeun/Library/Application Support/typora-user-images/스크린샷 2020-06-23 오후 4.34.22.png)
+<img width="479" alt="스크린샷 2020-06-23 오후 4 41 41" src="https://user-images.githubusercontent.com/39258902/85374898-6c876a80-b570-11ea-8574-6ec4014d7d84.png">
+
 
 
 
@@ -68,6 +79,8 @@
 - 유지 보수 용이 / 재생 가능 / 기술 부채를 줄이기 위해 코드를 수정하는 과정. 
 
   
+
+
 
 #### 리팩터링 원칙
 
