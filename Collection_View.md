@@ -2,7 +2,7 @@
 
 : 한 행 안에 여러개의 데이터가 들어있는 것.
 
-<img src="/Users/heoyeeun/Library/Application Support/typora-user-images/스크린샷 2020-06-25 오후 9.05.18.png" alt="스크린샷 2020-06-25 오후 9.05.18" style="zoom:50%;" />
+<img width="228" alt="스크린샷 2020-06-25 오후 9 06 04" src="https://user-images.githubusercontent.com/39258902/85716682-afd80980-b727-11ea-943d-0cb2b33f2739.png">
 
 - 수평 / 수직 방향을 정할 수 있음.
 
