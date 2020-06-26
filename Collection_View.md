@@ -20,3 +20,24 @@
 
 
 
+
+
+## Animation
+
+: 시간에 따라, 뷰의 상태가 바뀌는 것.
+
+- animation = 시작, 끝, 시간.
+
+  
+
+#### Animation API
+
+```swift
+UIView.animate(
+	withDuration: 1.0
+	animations: {
+		layoutIfNeeded()
+	}
+)
+```
+
