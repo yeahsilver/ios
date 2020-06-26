@@ -41,3 +41,24 @@ UIView.animate(
 )
 ```
 
+
+
+## Animating View Properties
+
+#### 3 categories
+
+- position & size
+  - bounds, frame, center
+- transformation
+  - rotation, scale, translation
+- appearance 
+  - backgroundColor, alpha
+
+
+
+##### 주의사항
+
+: position & size는 고민해서 사용해야함. autolayout에 맞지 않는 애니메이션을 취할 수 있기 때문. 
+
+
+
