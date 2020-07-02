@@ -11,7 +11,7 @@ import UIKit
 
 extension AVPlayerItem {
     func convertToTrack() -> Track? {
-        let metadatList = asset.metadata
+        let metadatList = asset.metadata //asset: 곡의 여러 정보(title, artist, albumName, artwork 등) 를 저장함. 
         
         var trackTitle: String?
         var trackArtist: String?

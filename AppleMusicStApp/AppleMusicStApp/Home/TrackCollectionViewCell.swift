@@ -17,10 +17,9 @@ class TrackCollecionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         trackThumbnail.layer.cornerRadius = 4
         trackArtist.textColor = UIColor.systemGray2
-    }
+    } // 앱의 이미지 로드
     
     func updateUI(item: Track?) {
         // TODO: 곡정보 표시하기
-        
     }
 }
