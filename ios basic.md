@@ -25,7 +25,8 @@
 
   - 이벤트의 흐름
 
-    사진1
+    <img width="878" alt="스크린샷 2020-07-03 오후 5 55 13" src="https://user-images.githubusercontent.com/39258902/86451772-59d21a00-bd56-11ea-93bc-da04297c5970.png">
+
 
     1. 이벤트(버튼 클릭 등)를 UIEvent로 변환해서 실행 중인 어플리케이션 객체인 UIApplication의 sendEvent 메서드를 호출한다.
 
@@ -81,7 +82,7 @@ sceneDidBackground(_:)
 
 ```
 
-사진2
+<img width="955" alt="스크린샷 2020-07-03 오후 5 55 34" src="https://user-images.githubusercontent.com/39258902/86451813-66ef0900-bd56-11ea-8198-970a77c29244.png">
 
 
 
@@ -118,7 +119,7 @@ sceneDidBackground(_:)
 - View: 사용자에게 보여지는 UI부분
 - Controller: 사용자의 액션을 받고 처리하는 부분
 
-사진 3
+<img width="466" alt="스크린샷 2020-07-03 오후 5 55 57" src="https://user-images.githubusercontent.com/39258902/86451865-74a48e80-bd56-11ea-859c-a68ef69b8ac5.png">
 
 
 
@@ -166,7 +167,7 @@ sceneDidBackground(_:)
 - View: 사용자에게 보여지는 UI부분
 - Presenterr: View에서 요청한 정보를 기반으로 model을 가공하여 view에 전달해주는 부분
 
-사진 4
+<img width="439" alt="스크린샷 2020-07-03 오후 6 26 34" src="https://user-images.githubusercontent.com/39258902/86454792-bcc5b000-bd5a-11ea-9c48-8fa4188912b9.png">
 
 
 
@@ -209,7 +210,7 @@ sceneDidBackground(_:)
 - View: 사용자에게 보여지는 UI부분
 - View Model: View를 표현하기 위해 만든 View를 위한 Model. View를 나타내주기 위한 Model이자 View들을 나타내기 위한 데이터 처리를 담당하는 부분.
 
-사진 5
+<img width="496" alt="스크린샷 2020-07-03 오후 6 33 13" src="https://user-images.githubusercontent.com/39258902/86455504-a9671480-bd5b-11ea-9565-ec4dff226c7d.png">
 
 
 
@@ -259,7 +260,9 @@ sceneDidBackground(_:)
 - entity: 네트워크, DB등의 데이터 모델
 - Router: VIPER 컴포넌트들의 dependency injection을 담당. (의존성을 낮춤) / 화면간의 탐색을 위한 라우팅 담당(어떻게 화면 전환이 될 것인지를 관리함.)
 
-사진 6
+<img width="893" alt="스크린샷 2020-07-03 오후 9 25 34" src="https://user-images.githubusercontent.com/39258902/86469113-bd1e7500-bd73-11ea-86c3-c75bfdf00f00.png">
+
+
 
 #### - VIPER의 작동 원리
 
@@ -305,7 +308,9 @@ sceneDidBackground(_:)
 
 - Router: controller에서 발생한 이벤트를 다른 user case에 전달하는 역할
 
-  사진 7
+<img width="646" alt="스크린샷 2020-07-03 오후 9 26 08" src="https://user-images.githubusercontent.com/39258902/86469154-d1627200-bd73-11ea-99d3-b192c1443e85.png">
+
+
 
 #### - VIP 작동 원리
 
