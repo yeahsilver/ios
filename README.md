@@ -86,7 +86,7 @@ sceneDidBackground(_:)
 
 
 
-##Constraint
+## Constraint
 
 - leading space: 전체화면과 component의 왼쪽 끝의 거리를 지정해주는 것 (왼쪽 마진과 비슷)
 - Trailing space: 전체화면과 component의 오른쪽 끝의 거리를 지정해주는 것(오른쪽 마진과 비슷)
