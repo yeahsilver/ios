@@ -302,7 +302,7 @@ sceneDidBackground(_:)
 
 - Controller: view를 코드에 바인딩하는 레이어
 
-- Interactor: collection의 요청을 보내야하는 비즈니스 로직 계층
+- Interactor: controller의 요청을 보내야하는 비즈니스 로직 계층
 
 - presenter: interactor로부터 받은 형태를 view에 맞게 전달할 수 있게 controller에게 전달
 
