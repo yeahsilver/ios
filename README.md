@@ -53,7 +53,8 @@ application: UIApplication, didDiscardSceneSessions
 
 
 
-##SceneDelegate
+
+## SceneDelegate
 
 : UI 상태를 알 수 있는 UILifeCycle에 대한 역할을 함.
 
@@ -111,6 +112,7 @@ sceneDidBackground(_:)
 
 > 디자인 패턴을 사용하는 이유: 각각의 역할을 나눠 코드를 관리하게 된다면, 유지보수와 개발 효율이 좋아짐
 
+
 ### MVC (Model + View + Controller)
 
 #### - MVC의 구조
@@ -123,7 +125,7 @@ sceneDidBackground(_:)
 
 
 
-####- MVC의 동작순서
+#### - MVC의 동작순서
 
 1. controller가 사용자의 action을 받음
 
@@ -158,6 +160,9 @@ sceneDidBackground(_:)
   - 높은 의존성은 어프리케이션의 규모가 증가하면 복잡하고, 유지보수가 어려울 수 있음.
 
 - model만 테스트 가능
+
+
+
 
 ### MVP (Model + View + Presenter)
 
@@ -199,6 +204,8 @@ sceneDidBackground(_:)
 #### - MVP의 단점
 
 - view와 presentor의 의존성이 존재하여, 어플리케이션의 규모가 커질수록 둘사이의 의존성이 강해짐
+
+
 
 
 
@@ -250,6 +257,8 @@ sceneDidBackground(_:)
 
 
 
+
+
 ### VIPER
 
 #### - VIPER의 구조
@@ -291,6 +300,8 @@ sceneDidBackground(_:)
 - 코드양이 가장 많다.
 - 작은 기능에도 많은 클래스를 작성해야함
 - 메모리 누수 가능성이 높다
+
+
 
 
 
@@ -343,6 +354,8 @@ sceneDidBackground(_:)
 - layer끼리 전달할때 request / response 모델을 랩핑해야하는 불편함이 존재
 - 모델을 랩핑하지 않을 경우, 컴포넌트가 결합될 수 있음
 - 비동기 액션에 대한 처리가 별도로 필요함
+
+
 
 
 
