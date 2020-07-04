@@ -6,13 +6,13 @@
 
 ### ✏️ **목차**
 
-·    [App Delegate](file:///Users/heoyeeun/Documents/GitHub/ios/ios basic.md#app-delegate)
+- [App Delegate](#app-delegate)
 
-·    [Scene Delegate](file:///Users/heoyeeun/Documents/GitHub/ios/scene-delgate)
+- [Scene Delegate](#scene-delegate)
 
-·    [Constraints](file:///Users/heoyeeun/Documents/GitHub/ios/constraints)
+- [Constraints](#constraints)
 
-·    [디자인 패턴](file:///Users/heoyeeun/Documents/GitHub/ios/ios basic.md#디자인-패턴)
+- [디자인 패턴](#디자인-패턴)
 
 
 
