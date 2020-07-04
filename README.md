@@ -69,7 +69,7 @@ application: UIApplication, didDiscardSceneSessions
 
 
 
-## SceneDelegate
+## Scene Delegate
 
 : UI 상태를 알 수 있는 UILifeCycle에 대한 역할을 함.
 
