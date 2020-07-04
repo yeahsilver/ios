@@ -1,18 +1,20 @@
 # 👩🏻‍💻 IOS Swift
 
+[![Swift](http://img.shields.io/badge/Swift-v.5.1-blue.svg?style=flat)](https://developer.apple.com/swift/)
+
 ##### ✨ 제가 생각하기에 필요하거나 헷갈리는 부분만 정리해놓았습니다. 이론상의 순서와 맞지 않을 수 있으니 참고하시면서 봐주시면 감사하겠습니다 :) ✨
 
 
 
 ### ✏️ **목차**
 
-- [App Delegate](#app-delegate)
+·    [App Delegate](file:///Users/heoyeeun/Documents/GitHub/ios/ios basic.md#app-delegate)
 
-- [Scene Delegate](#scene-delegate)
+·    [Scene Delegate](file:///Users/heoyeeun/Documents/GitHub/ios/scene-delgate)
 
-- [Constraints](#constraints)
+·    [Constraints](file:///Users/heoyeeun/Documents/GitHub/ios/constraints)
 
-- [Design patterns](#디자인-패턴)
+·    [디자인 패턴](file:///Users/heoyeeun/Documents/GitHub/ios/ios basic.md#디자인-패턴)
 
 
 
@@ -69,7 +71,7 @@ application: UIApplication, didDiscardSceneSessions
 
 
 
-## Scene Delegate
+## SceneDelegate
 
 : UI 상태를 알 수 있는 UILifeCycle에 대한 역할을 함.
 
@@ -102,7 +104,7 @@ sceneDidBackground(_:)
 
 
 
-## Constraints
+## Constraint
 
 - leading space: 전체화면과 component의 왼쪽 끝의 거리를 지정해주는 것 (왼쪽 마진과 비슷)
 - Trailing space: 전체화면과 component의 오른쪽 끝의 거리를 지정해주는 것(오른쪽 마진과 비슷)
