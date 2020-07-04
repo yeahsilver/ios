@@ -1,6 +1,20 @@
 # 👩🏻‍💻 IOS Swift
 
-##### 제가 생각하기에 필요하거나 헷갈리는 부분만 정리해놓았습니다. 이론상의 순서와 맞지 않을 수 있으니 참고하시면서 봐주시면 감사하겠습니다 :)
+##### ✨ 제가 생각하기에 필요하거나 헷갈리는 부분만 정리해놓았습니다. 이론상의 순서와 맞지 않을 수 있으니 참고하시면서 봐주시면 감사하겠습니다 :) ✨
+
+
+
+### ✏️ **목차**
+
+·    [App Delegate](file:///Users/heoyeeun/Documents/GitHub/ios/ios basic.md#app-delegate)
+
+·    [Scene Delegate](file:///Users/heoyeeun/Documents/GitHub/ios/scene-delgate)
+
+·    [Constraints](file:///Users/heoyeeun/Documents/GitHub/ios/constraints)
+
+·    [디자인 패턴](file:///Users/heoyeeun/Documents/GitHub/ios/ios basic.md#디자인-패턴)
+
+
 
 ## App Delegate
 
@@ -29,14 +43,15 @@
 
 
     1. 이벤트(버튼 클릭 등)를 UIEvent로 변환해서 실행 중인 어플리케이션 객체인 UIApplication의 sendEvent 메서드를 호출한다.
-
+    
     2. UIApplication의 sendEvent 메서드는 UIWindow에게 sendEvent를 다시 보낸다.
-
+    
     3. UIWindow는 이벤트에 해당하는 메시지를 자식 뷰 중에서 최초 응답 객체에 보낸다.
-
+    
     4. 최초 응답 객체가 이벤트를 처리하고, 이벤트는 소멸된다.
 
-       
+
+​       
 
 - Scene Session이 생성되거나 삭제될 때 AppDelegate에 알리는 메소드 추가. (Scene session은 앱에서 생성한 모든 scene의 정보를 관리)
 
