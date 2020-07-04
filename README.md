@@ -14,9 +14,8 @@
 - [UIViewController Lifecycle](#uivIewcontroller-lifecycle)
 - [Constraints](#constraints)
 - [Design Pattern](#디자인-패턴)
-- [Segue](#segue)
+- [Segue](#segue-(segueway))
 - [Animation](#Animation)
-- 
 
 
 
