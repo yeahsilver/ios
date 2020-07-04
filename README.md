@@ -448,7 +448,7 @@ sceneDidBackground(_:)
 
 
 
-### 📍 Reference List
+## 📍 Reference List
 
 - [Roles of AppDelegate](https://zeddios.tistory.com/218)
 - [Roles of SceneDelegate](https://velog.io/@dev-lena/iOS-AppDelegate와-SceneDelegate)
