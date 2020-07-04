@@ -1,6 +1,7 @@
 # 👩🏻‍💻 IOS Swift
 
-[![Swift](http://img.shields.io/badge/Swift-v.5.1-blue.svg?style=flat)](https://developer.apple.com/swift/)[![Swift](http://img.shields.io/badge/xcode-v.11.5-orange.svg?style=flat)](https://developer.apple.com/xcode/whats-new/)
+[![Swift](http://img.shields.io/badge/Swift-v.5.1-blue.svg?style=flat)](https://developer.apple.com/swift/)
+[![XCode](http://img.shields.io/badge/xcode-v.11.5-orange.svg?style=flat)](https://developer.apple.com/xcode/whats-new/)
 
 ##### ✨ 제가 생각하기에 필요하거나 헷갈리는 부분만 정리해놓았습니다. 이론상의 순서와 맞지 않을 수 있으니 참고하시면서 봐주시면 감사하겠습니다 :) ✨
 
