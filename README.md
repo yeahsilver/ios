@@ -15,6 +15,8 @@
 - [Constraints](#constraints)
 - [Design Pattern](#디자인-패턴)
 - [Segue](#segue)
+- [Animation](#Animation)
+- 
 
 
 
@@ -501,8 +503,7 @@ CGAffineTransform(translationX: view.bounds.width, y:0).scaledBy(x: 3, y:3).rota
 - [Design Patterns - VIPER / VIP](https://dev-leeyang.tistory.com/21)
 - [Components of Collection View 1](https://www.youtube.com/watch?v=CcLJk_YttTI)
 - [Components of Collection View 2](https://www.iosdevlog.com/pro_ios_table_views_and_collection_views/2016/04/23/Collection-Views-Quick-Start.html)
-
 - [UICollectionViewDataSource](https://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/CollectionViewPGforIOS/CreatingCellsandViews/CreatingCellsandViews.html)
-
 - [Segue](https://thd0011.tistory.com/44)
+- [CGAffineTransform](https://hyerios.tistory.com/14)
 
