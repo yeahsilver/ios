@@ -1,6 +1,6 @@
 # 👩🏻‍💻 IOS Swift
 
-[![Swift](http://img.shields.io/badge/Swift-v.5.1-blue.svg?style=flat)](https://developer.apple.com/swift/)
+[![Swift](http://img.shields.io/badge/Swift-v.5.1-blue.svg?style=flat)](https://developer.apple.com/swift/)[![Swift](http://img.shields.io/badge/xcode-v.11.5-orange.svg?style=flat)](https://developer.apple.com/xcode/whats-new/)
 
 ##### ✨ 제가 생각하기에 필요하거나 헷갈리는 부분만 정리해놓았습니다. 이론상의 순서와 맞지 않을 수 있으니 참고하시면서 봐주시면 감사하겠습니다 :) ✨
 
@@ -14,7 +14,7 @@
 - [UIViewController Lifecycle](#uivIewcontroller-lifecycle)
 - [Constraints](#constraints)
 - [Design Pattern](#디자인-패턴)
-- [Segue](#segue-(segueway))
+- [Segue](#segue)
 - [Animation](#Animation)
 
 
@@ -434,7 +434,7 @@ sceneDidBackground(_:)
 
 
 
-## Segue (SegueWay)
+## Segue
 
 : 스토리보드에서 뷰 컨트롤러 사이의 화면전환을 위해 사용하는 객체
 
