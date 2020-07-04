@@ -104,6 +104,31 @@ sceneDidBackground(_:)
 
 
 
+## View Controller
+
+: 어플리케이션의 인터페이스와 인터페이스와 데이터 간의 상호작용을 관리
+
+- UIViewController: view의 속성과 메소드를 정의 
+  - content view controllers: 어플리케이션 내용을 관리 
+  - Container view controllers: 다른 view controller에 있는 정보를 수집한 뒤 효율적인 방향 제시
+
+사진 1
+
+
+
+### UIVIewController Lifecycle
+
+- init: View Controller를 초기화하는 메소드
+- viewDidLoad: view가 메모리에 로드된 뒤 실행하는 메소드
+- viewWillAppear: view를 사용자의 스크린에 띄우기 위해 사용하는 메소드 ex) scroll할때 나타나는 정보
+- viewDidAppear: view를 사용자의 스크린에 띄운 뒤 실행하는 메소드 + 애니메이션의 시작을 정의
+- viewWillDisappear: view가 사용자의 스크린에 꺼지기 직전 실행되는 메소드. Ex) 임의의 텍스트를 바꾸면 직전의 텍스트를 저장해주는 역할?
+- viewDidDisappear: 스크린이 완전히 꺼졌을 때 실행되는 메소드
+
+사진 4
+
+
+
 ## Constraint
 
 - leading space: 전체화면과 component의 왼쪽 끝의 거리를 지정해주는 것 (왼쪽 마진과 비슷)
@@ -230,9 +255,9 @@ sceneDidBackground(_:)
 
 #### - MVVM의 구조
 
-- Model: 어플리케이션에서 사용되는 데이터와 그 데이터를 처리하는 부분
+- Model: 어플리케이션에서 사용되는 데이터와 그 데이터를 처리하는 부분 (데이터의 틀)
 - View: 사용자에게 보여지는 UI부분
-- View Model: View를 표현하기 위해 만든 View를 위한 Model. View를 나타내주기 위한 Model이자 View들을 나타내기 위한 데이터 처리를 담당하는 부분.
+- View Model: View를 표현하기 위해 만든 View를 위한 Model. View를 나타내주기 위한 Model이자 View들을 나타내기 위한 데이터 처리를 담당하는 부분. (데이터 저장 부분)
 
 <img width="496" alt="스크린샷 2020-07-03 오후 6 33 13" src="https://user-images.githubusercontent.com/39258902/86455504-a9671480-bd5b-11ea-9565-ec4dff226c7d.png">
 
@@ -374,18 +399,65 @@ sceneDidBackground(_:)
 
 
 
+## Collection View
 
+- Items: 스크린에 디스플레이 하고 싶은 각각의 데이터를 나타냄 ex) 사진
+- Groups: 여러개의 item을 가지고 있음. 어디에 레이아웃 위치해야하는지를 나타냄
+- Sections: data를 묶어놓은 것. datasource에서 어떻게 데이터가 구성되어있는지를 알려주는 역할.
+
+
+
+#### Collection View의 구성요소
+
+사진 3
+
+#### UICollectionViewDataSource
+
+: 데이터와 collection view가 요구하는 view를 제공
+
+- 얼마나 많은 section이 collection view에 들어갈 것인지
+- 주어진 section에서 얼마나 많은 item이 section안에 삽입될 것인지
+- 주어진 section과 item에서, 상응하는 내용이 보여지기 위해 어떠한 view를 사용해야하는지
+
+#### UICollectionViewDelegate
+
+- collection view 내부에서 선택하거나 중요한 item을 관리
+-  item에 대한 행동을 수행
+
+
+
+#### UICollectionViewDelegateFlowLayout
+
+- item의 사이즈를 정의
+- grid와 item 사이의 거리를 정의
+
+
+
+## Segue (SegueWay)
+
+: 스토리보드에서 뷰 컨트롤러 사이의 화면전환을 위해 사용하는 객체
+
+#### Segue 작동법
+
+1. 세그웨이 식별자를 가져온 값을 가지고 해당 뷰가 맞는지(identifier가 같은지) 비교
+2. 맞으면 목적지 뷰로 캐스팅.
+   - 이때, 목적지 뷰를 설정한 뒤, 목적지 뷰에 전달받아야 하는 변수를 참조하여 이동할 값을 할당.
 
 
 
 #### 📍 Reference List
 
-- [AppDelegate의 역할](https://zeddios.tistory.com/218)
-
-- [SceneDelegate의 역할]()
-
+- [Roles of AppDelegate](https://zeddios.tistory.com/218)
+- [Roles of SceneDelegate](https://velog.io/@dev-lena/iOS-AppDelegate와-SceneDelegate)
+- [Roles of View Controller](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/index.html)
+- [UIViewController Lifecycle](https://www.zerotoappstore.com/what-is-uiviewcontroller-lifecycle.html)
 - [Constraints](https://www.youtube.com/watch?v=pwkpyzn7EOM)
+- [Design Patterns](https://beomy.tistory.com/43)
+- [Design Patterns - VIPER / VIP](https://dev-leeyang.tistory.com/21)
+- [Components of Collection View 1](https://www.youtube.com/watch?v=CcLJk_YttTI)
+- [Components of Collection View 2](https://www.iosdevlog.com/pro_ios_table_views_and_collection_views/2016/04/23/Collection-Views-Quick-Start.html)
 
-- [디자인 패턴](https://beomy.tistory.com/43)
-- [디자인 패턴 VIPER / VIP](https://dev-leeyang.tistory.com/21)
+- [UICollectionViewDataSource](https://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/CollectionViewPGforIOS/CreatingCellsandViews/CreatingCellsandViews.html)
+
+- [Segue](https://thd0011.tistory.com/44)
 
