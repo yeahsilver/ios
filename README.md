@@ -71,7 +71,7 @@ application: UIApplication, didDiscardSceneSessions
 
 
 
-## SceneDelegate
+## Scene Delegate
 
 : UI 상태를 알 수 있는 UILifeCycle에 대한 역할을 함.
 
@@ -112,7 +112,7 @@ sceneDidBackground(_:)
   - content view controllers: 어플리케이션 내용을 관리 
   - Container view controllers: 다른 view controller에 있는 정보를 수집한 뒤 효율적인 방향 제시
 
-사진 1
+<img width="661" alt="스크린샷 2020-07-04 오후 9 58 37" src="https://user-images.githubusercontent.com/39258902/86512996-857dfe80-be41-11ea-9f97-275cb7df8324.png">
 
 
 
@@ -125,11 +125,11 @@ sceneDidBackground(_:)
 - viewWillDisappear: view가 사용자의 스크린에 꺼지기 직전 실행되는 메소드. Ex) 임의의 텍스트를 바꾸면 직전의 텍스트를 저장해주는 역할?
 - viewDidDisappear: 스크린이 완전히 꺼졌을 때 실행되는 메소드
 
-사진 4
+<img width="770" alt="스크린샷 2020-07-04 오후 11 00 32" src="https://user-images.githubusercontent.com/39258902/86514068-2cff2f00-be4a-11ea-972b-e9dc10583b36.png">
 
 
 
-## Constraint
+## Constraints
 
 - leading space: 전체화면과 component의 왼쪽 끝의 거리를 지정해주는 것 (왼쪽 마진과 비슷)
 - Trailing space: 전체화면과 component의 오른쪽 끝의 거리를 지정해주는 것(오른쪽 마진과 비슷)
@@ -409,7 +409,7 @@ sceneDidBackground(_:)
 
 #### Collection View의 구성요소
 
-사진 3
+<img width="729" alt="스크린샷 2020-07-04 오후 10 33 19" src="https://user-images.githubusercontent.com/39258902/86513590-5e75fb80-be46-11ea-8a92-f17fffda4382.png">
 
 #### UICollectionViewDataSource
 
@@ -445,7 +445,10 @@ sceneDidBackground(_:)
 
 
 
-#### 📍 Reference List
+
+
+
+### 📍 Reference List
 
 - [Roles of AppDelegate](https://zeddios.tistory.com/218)
 - [Roles of SceneDelegate](https://velog.io/@dev-lena/iOS-AppDelegate와-SceneDelegate)
