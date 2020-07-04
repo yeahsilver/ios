@@ -6,15 +6,15 @@
 
 
 
-### ✏️ 목차
+## ✏️ 목차
 
 - [App Delegate](#app-delegate)
-
 - [Scene Delegate](#scene-delgate)
-
+- [View Controller](#view-controller)
+- [UIViewController Lifecycle](#uivIewcontroller-lifecycle)
 - [Constraints](#constraints)
-
-- [디자인 패턴](#디자인-패턴)
+- [Design Pattern](#디자인-패턴)
+- [Segue](#segue)
 
 
 
@@ -444,6 +444,48 @@ sceneDidBackground(_:)
    - 이때, 목적지 뷰를 설정한 뒤, 목적지 뷰에 전달받아야 하는 변수를 참조하여 이동할 값을 할당.
 
 
+
+## Animation
+
+### UIKit의 애니메이션 API
+
+```swift
+// 기본 타이밍 함수를 이용하여 애니메이션 로드
+animate(withDuration: animations:)
+
+// 완료 핸들러 추가
+animate(withDuration: animations: completion: )
+
+//딜레이 및 다른 애니메이션 옵션 사용
+animate(withDuration: delay: options: animations: completion: )
+
+// 일반적인 곡선 타이밍 함수가 아닌 스프링에 의한 타이밍 함수를 사용하여 애니메이팅하는 함수
+animate(withDuration: delay: usingSpringWithDamping: initialSpringVelocity: options: animations: completion: )
+
+// 키 프레임 애니메이션 표시
+animateKeyframes(withDuration: delay: options: animations: completion:)
+
+// 뷰 트랜지션
+transition(with: duration: options: animations: completion: )
+
+// 제 3의 뷰를 트렌지션
+transition(_: on: options: animations: completion: )
+```
+
+
+
+### CGAffineTransform
+
+: 뷰의 프레임을 계산하지 않고 2D 그래픽을 그리는 방법
+
+- Scale: 뷰의 넓이와 높이를 배로 증가시키는 역할
+- Rotate: 뷰를 회전
+- Translate: 뷰의 위치를 변경
+
+```Swift
+CGAffineTransform(translationX: view.bounds.width, y:0).scaledBy(x: 3, y:3).rotated(by: 180)
+// view.bounds.width만큼 x축으로 이동하고, x와 y를 3배로 늘린 후 180도 회전
+```
 
 
 
