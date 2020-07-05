@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     // TODO: 트랙관리 객체 추가
-    
+    let trackManager: TrackManager = TrackManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +30,10 @@ extension HomeViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TrackCollectionViewCell", for: indexPath) as? TrackCollectionViewCell else {
             return UICollectionViewCell()
         }
+        
+        let item = trackManager.track(at: indexPath.item)
+        cell.updateUI(item: item)
+        
         return cell
     }
     
