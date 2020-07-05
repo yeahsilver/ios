@@ -14,14 +14,12 @@ class TrackManager {
     
     // TODO: 생성자 정의하기
     init() {
-       
     }
 
     // TODO: 트랙 로드하기
     func loadTracks() -> [AVPlayerItem] {
         return []
     }
-    
     
     // TODO: 인덱스에 맞는 트랙 로드하기
     func track(at index: Int) -> Track? {
@@ -35,5 +33,6 @@ class TrackManager {
 
     // TODO: 오늘의 트랙 랜덤으로 선책
     func loadOtherTodaysTrack() {
+        
     }
 }
