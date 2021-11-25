@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  FoodPin
 //
-//  Created by 허예은 on 2021/11/19.
+//  Created by apple on 2021/07/31.
 //
 
 import UIKit
@@ -10,14 +10,10 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let window = UIWindow()
-        window.rootViewController = ViewController()
-        window.makeKeyAndVisible()
-        self.window = window
         return true
     }
 
