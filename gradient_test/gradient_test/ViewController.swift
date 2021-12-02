@@ -9,13 +9,13 @@ class ViewController: UIViewController {
     private func createLapView() -> UIView {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .black
         self.view.addSubview(view)
         return view
     }
     
     private func createWaveView() -> WaveAnimationView {
-        let waveView = WaveAnimationView()
-        waveView.translatesAutoresizingMaskIntoConstraints = false
+        let waveView = WaveAnimationView(frame: CGRect(origin: .zero, size: lapView.bounds.size), color: UIColor.blue.withAlphaComponent(0.5))
         lapView.addSubview(waveView)
         return waveView
     }
@@ -34,17 +34,10 @@ class ViewController: UIViewController {
     
     private func layout() {
         NSLayoutConstraint.activate([
-            lapView.topAnchor.constraint(equalTo: view.topAnchor),
-            lapView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            lapView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            lapView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
-        
-        NSLayoutConstraint.activate([
-            waveView.topAnchor.constraint(equalTo: lapView.topAnchor),
-            waveView.leadingAnchor.constraint(equalTo: lapView.leadingAnchor),
-            waveView.bottomAnchor.constraint(equalTo: lapView.bottomAnchor),
-            waveView.trailingAnchor.constraint(equalTo: lapView.trailingAnchor)
+            lapView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            lapView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            lapView.heightAnchor.constraint(equalToConstant: 240),
+            lapView.widthAnchor.constraint(equalTo: view.widthAnchor)
         ])
     }
     
