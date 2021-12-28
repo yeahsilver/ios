@@ -7,48 +7,94 @@
 
 import Foundation
 
+// 수정 전
+//class Vehicle {
+//    func setVehicle() {
+//        print("Set Vehicle")
+//        let cars = [Car(brand: "Hyudai"),
+//                    Car(brand: "KIA"),
+//                    Car(brand: "Renault")
+//        ]
+//
+//        let trucks = [Truck(brand: "Hyudai"),
+//                      Truck(brand: "KIA")
+//        ]
+//
+//        for car in cars {
+//            car.getBrand()
+//        }
+//
+//        for truck in trucks {
+//            truck.getBrand()
+//        }
+//    }
+//}
+//
+//class Car {
+//    let brand: String
+//
+//    init(brand: String) {
+//        self.brand = brand
+//    }
+//
+//    func getBrand() {
+//        print("car: \(brand)")
+//    }
+//}
+//
+//class Truck {
+//    let brand: String
+//
+//    init(brand: String) {
+//        self.brand = brand
+//    }
+//
+//    func getBrand() {
+//        print("truck: \(brand)")
+//    }
+//}
+
+// 수정 후
+protocol VehicleProtocol {
+    func getBrand() -> String
+}
+
 class Vehicle {
-    func setVehicle() {
-        print("Set Vehicle")
-        let cars = [Car(brand: "Hyudai"),
+    func getBrand() {
+        let vehicles: [VehicleProtocol] = [
+                    Car(brand: "Hyudai"),
                     Car(brand: "KIA"),
-                    Car(brand: "Renault")
+                    Car(brand: "Renault"),
+                    Truck(brand: "Hyudai"),
+                    Truck(brand: "KIA")
         ]
         
-        let trucks = [Truck(brand: "Hyudai"),
-                      Truck(brand: "KIA")
-        ]
-        
-        for car in cars {
-            car.getCarName()
-        }
-        
-        for truck in trucks {
-            truck.getCarName()
+        vehicles.forEach { vehicle in
+            print(vehicle.getBrand())
         }
     }
 }
 
-class Car {
+class Car: VehicleProtocol {
     let brand: String
     
     init(brand: String) {
         self.brand = brand
     }
     
-    func getCarName() {
-        print("car: \(brand)")
+    func getBrand() -> String {
+       return brand
     }
 }
 
-class Truck {
+class Truck: VehicleProtocol {
     let brand: String
     
     init(brand: String) {
         self.brand = brand
     }
     
-    func getCarName() {
-        print("truck: \(brand)")
+    func getBrand() -> String{
+        return brand
     }
 }
