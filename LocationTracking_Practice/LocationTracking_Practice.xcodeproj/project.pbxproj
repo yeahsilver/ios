@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9646503A277DE1A5009C96DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96465039277DE1A5009C96DD /* AppDelegate.swift */; };
-		9646503C277DE1A5009C96DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646503B277DE1A5009C96DD /* SceneDelegate.swift */; };
-		9646503E277DE1A5009C96DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646503D277DE1A5009C96DD /* ViewController.swift */; };
-		96465041277DE1A5009C96DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9646503F277DE1A5009C96DD /* Main.storyboard */; };
-		96465043277DE1A7009C96DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96465042277DE1A7009C96DD /* Assets.xcassets */; };
-		96465046277DE1A7009C96DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96465044277DE1A7009C96DD /* LaunchScreen.storyboard */; };
+		9646505A277DFC7B009C96DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96465059277DFC7B009C96DD /* AppDelegate.swift */; };
+		9646505C277DFC7B009C96DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646505B277DFC7B009C96DD /* SceneDelegate.swift */; };
+		9646505E277DFC7B009C96DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646505D277DFC7B009C96DD /* ViewController.swift */; };
+		96465061277DFC7B009C96DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9646505F277DFC7B009C96DD /* Main.storyboard */; };
+		96465063277DFC7D009C96DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96465062277DFC7D009C96DD /* Assets.xcassets */; };
+		96465066277DFC7D009C96DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96465064277DFC7D009C96DD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		96465036277DE1A5009C96DD /* LocationTracking_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationTracking_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		96465039277DE1A5009C96DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9646503B277DE1A5009C96DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9646503D277DE1A5009C96DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		96465040277DE1A5009C96DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		96465042277DE1A7009C96DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		96465045277DE1A7009C96DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		96465047277DE1A7009C96DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96465056277DFC7B009C96DD /* LocationTracking_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationTracking_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96465059277DFC7B009C96DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9646505B277DFC7B009C96DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9646505D277DFC7B009C96DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		96465060277DFC7B009C96DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96465062277DFC7D009C96DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96465065277DFC7D009C96DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96465067277DFC7D009C96DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		96465033277DE1A5009C96DD /* Frameworks */ = {
+		96465053277DFC7B009C96DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,32 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9646502D277DE1A5009C96DD = {
+		9646504D277DFC7B009C96DD = {
 			isa = PBXGroup;
 			children = (
-				96465038277DE1A5009C96DD /* LocationTracking_Practice */,
-				96465037277DE1A5009C96DD /* Products */,
+				96465058277DFC7B009C96DD /* LocationTracking_Practice */,
+				96465057277DFC7B009C96DD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		96465037277DE1A5009C96DD /* Products */ = {
+		96465057277DFC7B009C96DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96465036277DE1A5009C96DD /* LocationTracking_Practice.app */,
+				96465056277DFC7B009C96DD /* LocationTracking_Practice.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		96465038277DE1A5009C96DD /* LocationTracking_Practice */ = {
+		96465058277DFC7B009C96DD /* LocationTracking_Practice */ = {
 			isa = PBXGroup;
 			children = (
-				96465039277DE1A5009C96DD /* AppDelegate.swift */,
-				9646503B277DE1A5009C96DD /* SceneDelegate.swift */,
-				9646503D277DE1A5009C96DD /* ViewController.swift */,
-				9646503F277DE1A5009C96DD /* Main.storyboard */,
-				96465042277DE1A7009C96DD /* Assets.xcassets */,
-				96465044277DE1A7009C96DD /* LaunchScreen.storyboard */,
-				96465047277DE1A7009C96DD /* Info.plist */,
+				96465059277DFC7B009C96DD /* AppDelegate.swift */,
+				9646505B277DFC7B009C96DD /* SceneDelegate.swift */,
+				9646505D277DFC7B009C96DD /* ViewController.swift */,
+				9646505F277DFC7B009C96DD /* Main.storyboard */,
+				96465062277DFC7D009C96DD /* Assets.xcassets */,
+				96465064277DFC7D009C96DD /* LaunchScreen.storyboard */,
+				96465067277DFC7D009C96DD /* Info.plist */,
 			);
 			path = LocationTracking_Practice;
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		96465035277DE1A5009C96DD /* LocationTracking_Practice */ = {
+		96465055277DFC7B009C96DD /* LocationTracking_Practice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9646504A277DE1A7009C96DD /* Build configuration list for PBXNativeTarget "LocationTracking_Practice" */;
+			buildConfigurationList = 9646506A277DFC7D009C96DD /* Build configuration list for PBXNativeTarget "LocationTracking_Practice" */;
 			buildPhases = (
-				96465032277DE1A5009C96DD /* Sources */,
-				96465033277DE1A5009C96DD /* Frameworks */,
-				96465034277DE1A5009C96DD /* Resources */,
+				96465052277DFC7B009C96DD /* Sources */,
+				96465053277DFC7B009C96DD /* Frameworks */,
+				96465054277DFC7B009C96DD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +84,25 @@
 			);
 			name = LocationTracking_Practice;
 			productName = LocationTracking_Practice;
-			productReference = 96465036277DE1A5009C96DD /* LocationTracking_Practice.app */;
+			productReference = 96465056277DFC7B009C96DD /* LocationTracking_Practice.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9646502E277DE1A5009C96DD /* Project object */ = {
+		9646504E277DFC7B009C96DD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					96465035277DE1A5009C96DD = {
+					96465055277DFC7B009C96DD = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = 96465031277DE1A5009C96DD /* Build configuration list for PBXProject "LocationTracking_Practice" */;
+			buildConfigurationList = 96465051277DFC7B009C96DD /* Build configuration list for PBXProject "LocationTracking_Practice" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 9646502D277DE1A5009C96DD;
-			productRefGroup = 96465037277DE1A5009C96DD /* Products */;
+			mainGroup = 9646504D277DFC7B009C96DD;
+			productRefGroup = 96465057277DFC7B009C96DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				96465035277DE1A5009C96DD /* LocationTracking_Practice */,
+				96465055277DFC7B009C96DD /* LocationTracking_Practice */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		96465034277DE1A5009C96DD /* Resources */ = {
+		96465054277DFC7B009C96DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96465046277DE1A7009C96DD /* LaunchScreen.storyboard in Resources */,
-				96465043277DE1A7009C96DD /* Assets.xcassets in Resources */,
-				96465041277DE1A5009C96DD /* Main.storyboard in Resources */,
+				96465066277DFC7D009C96DD /* LaunchScreen.storyboard in Resources */,
+				96465063277DFC7D009C96DD /* Assets.xcassets in Resources */,
+				96465061277DFC7B009C96DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		96465032277DE1A5009C96DD /* Sources */ = {
+		96465052277DFC7B009C96DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9646503E277DE1A5009C96DD /* ViewController.swift in Sources */,
-				9646503A277DE1A5009C96DD /* AppDelegate.swift in Sources */,
-				9646503C277DE1A5009C96DD /* SceneDelegate.swift in Sources */,
+				9646505E277DFC7B009C96DD /* ViewController.swift in Sources */,
+				9646505A277DFC7B009C96DD /* AppDelegate.swift in Sources */,
+				9646505C277DFC7B009C96DD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9646503F277DE1A5009C96DD /* Main.storyboard */ = {
+		9646505F277DFC7B009C96DD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				96465040277DE1A5009C96DD /* Base */,
+				96465060277DFC7B009C96DD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		96465044277DE1A7009C96DD /* LaunchScreen.storyboard */ = {
+		96465064277DFC7D009C96DD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				96465045277DE1A7009C96DD /* Base */,
+				96465065277DFC7D009C96DD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		96465048277DE1A7009C96DD /* Debug */ = {
+		96465068277DFC7D009C96DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		96465049277DE1A7009C96DD /* Release */ = {
+		96465069277DFC7D009C96DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +282,7 @@
 			};
 			name = Release;
 		};
-		9646504B277DE1A7009C96DD /* Debug */ = {
+		9646506B277DFC7D009C96DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -292,6 +292,8 @@
 				DEVELOPMENT_TEAM = 3CY8UX9N2S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LocationTracking_Practice/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To Track the user's location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To Track the user's location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -310,7 +312,7 @@
 			};
 			name = Debug;
 		};
-		9646504C277DE1A7009C96DD /* Release */ = {
+		9646506C277DFC7D009C96DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -320,6 +322,8 @@
 				DEVELOPMENT_TEAM = 3CY8UX9N2S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LocationTracking_Practice/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To Track the user's location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To Track the user's location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -341,25 +345,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		96465031277DE1A5009C96DD /* Build configuration list for PBXProject "LocationTracking_Practice" */ = {
+		96465051277DFC7B009C96DD /* Build configuration list for PBXProject "LocationTracking_Practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				96465048277DE1A7009C96DD /* Debug */,
-				96465049277DE1A7009C96DD /* Release */,
+				96465068277DFC7D009C96DD /* Debug */,
+				96465069277DFC7D009C96DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9646504A277DE1A7009C96DD /* Build configuration list for PBXNativeTarget "LocationTracking_Practice" */ = {
+		9646506A277DFC7D009C96DD /* Build configuration list for PBXNativeTarget "LocationTracking_Practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9646504B277DE1A7009C96DD /* Debug */,
-				9646504C277DE1A7009C96DD /* Release */,
+				9646506B277DFC7D009C96DD /* Debug */,
+				9646506C277DFC7D009C96DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9646502E277DE1A5009C96DD /* Project object */;
+	rootObject = 9646504E277DFC7B009C96DD /* Project object */;
 }
