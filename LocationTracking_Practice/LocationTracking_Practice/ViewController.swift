@@ -83,7 +83,16 @@ extension ViewController {
     func locationServicesRestrictedState() {
         self.statusLabel.text = "This app is restriced from using the location services."
     }
+    
+    func getCurrentTime() -> String {
+        let now = NSDate()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
+        return dateFormatter.string(from: now as Date)
+    }
 }
+
 
 extension ViewController: CLLocationManagerDelegate {
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
@@ -115,6 +124,19 @@ extension ViewController: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print(locations)
+        for location in locations {
+            print("\(getCurrentTime()): \(location.coordinate.latitude), \(location.coordinate.longitude)")
+            
+            statusLabel.text = "\(getCurrentTime())\n \(location.coordinate.latitude), \(location.coordinate.longitude)"
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        let alert = UIAlertController(title: "에러", message: "GPS 신호가 존재하는 장소로 이동해주세요", preferredStyle: .alert)
+        let confirmButton = UIAlertAction(title: "Confirm", style: .default, handler: nil)
+        
+        alert.addAction(confirmButton)
+        
+        present(alert, animated: true, completion: nil)
     }
 }
