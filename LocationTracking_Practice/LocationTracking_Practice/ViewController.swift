@@ -7,9 +7,11 @@
 
 import UIKit
 import CoreLocation
+import MapKit
 
 class ViewController: UIViewController {
     private lazy var statusLabel: UILabel = { createStatusLabel() }()
+    private lazy var mapView: MKMapView = { createMapView() }()
     
     let locationSerivces = CLLocationManager()
     
@@ -47,11 +49,26 @@ extension ViewController {
         return label
     }
     
+    private func createMapView() -> MKMapView {
+        let mapView = MKMapView()
+        mapView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(mapView)
+        
+        return mapView
+    }
+    
     private func layout() {
         NSLayoutConstraint.activate([
             statusLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0),
             statusLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             statusLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+        ])
+        
+        NSLayoutConstraint.activate([
+            mapView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            mapView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            mapView.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor),
+            mapView.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor)
         ])
     }
 }
