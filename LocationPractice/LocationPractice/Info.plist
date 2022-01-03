@@ -21,5 +21,13 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>When In Use Usage</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Always and When In Use Usage</string>
 </dict>
 </plist>
