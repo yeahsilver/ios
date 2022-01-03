@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         locationSerivces.delegate = self
         locationSerivces.allowsBackgroundLocationUpdates = true
         locationSerivces.showsBackgroundLocationIndicator = true
+        locationSerivces.distanceFilter = 100
+        locationSerivces.desiredAccuracy = kCLLocationAccuracyBest
         
         guard CLLocationManager.locationServicesEnabled() else {
             return
@@ -33,6 +35,9 @@ class ViewController: UIViewController {
         
         // 앱 장소 항상 트래킹
         locationSerivces.requestAlwaysAuthorization()
+        
+        mapView.delegate = self
+        mapView.showsUserLocation = true
     }
 }
 
@@ -143,8 +148,6 @@ extension ViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         for location in locations {
             print("\(getCurrentTime()): \(location.coordinate.latitude), \(location.coordinate.longitude)")
-            
-            statusLabel.text = "\(getCurrentTime())\n \(location.coordinate.latitude), \(location.coordinate.longitude)"
         }
     }
     
@@ -155,5 +158,22 @@ extension ViewController: CLLocationManagerDelegate {
         alert.addAction(confirmButton)
         
         present(alert, animated: true, completion: nil)
+    }
+}
+
+extension ViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "myAnnotation") as? MKPinAnnotationView
+        
+        if annotationView == nil {
+            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "myAnnotation")
+        } else {
+            annotationView?.annotation = annotation
+        }
+        if let annotation = annotation as? MKPinAnnotationColor {
+            annotationView?.pinTintColor = .red
+        }
+        
+        return annotationView
     }
 }
