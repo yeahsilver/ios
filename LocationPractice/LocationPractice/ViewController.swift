@@ -125,9 +125,12 @@ extension ViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
-            print("\(getCurrentTime()): \(location.coordinate.latitude), \(location.coordinate.longitude)")
             
             statusLabel.text = "\(getCurrentTime())\n \(location.coordinate.latitude), \(location.coordinate.longitude)"
+            
+            if UIApplication.shared.applicationState != .active {
+                print("App is in background mode at location. \(location.coordinate.latitude), \(location.coordinate.longitude)")
+            }
         }
     }
     
