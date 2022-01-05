@@ -38,10 +38,11 @@ class ViewController: UIViewController {
 extension ViewController {
     private func createStatusLabel() -> UILabel {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 24)
         label.numberOfLines = 0
+        label.textColor = .white
         label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(label)
         
         return label
@@ -93,7 +94,6 @@ extension ViewController {
     }
 }
 
-
 extension ViewController: CLLocationManagerDelegate {
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         let status = manager.authorizationStatus
@@ -128,6 +128,7 @@ extension ViewController: CLLocationManagerDelegate {
             
             statusLabel.text = "\(getCurrentTime())\n \(location.coordinate.latitude), \(location.coordinate.longitude)"
             
+            // 백그라운드 처리해야하는 경우
             if UIApplication.shared.applicationState != .active {
                 print("App is in background mode at location. \(location.coordinate.latitude), \(location.coordinate.longitude)")
             }
