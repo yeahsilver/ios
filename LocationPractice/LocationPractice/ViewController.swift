@@ -129,7 +129,7 @@ extension ViewController: CLLocationManagerDelegate {
             statusLabel.text = "\(getCurrentTime())\n \(location.coordinate.latitude), \(location.coordinate.longitude)"
             
             // 백그라운드 처리해야하는 경우
-            if UIApplication.shared.applicationState != .active {
+            if UIApplication.shared.applicationState == .background {
                 print("App is in background mode at location. \(location.coordinate.latitude), \(location.coordinate.longitude)")
             }
         }

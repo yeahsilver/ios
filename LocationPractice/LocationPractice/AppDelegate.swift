@@ -12,7 +12,7 @@ import CoreLocation
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let locationSerivces = CLLocationManager()
+    private let locationSerivces = CLLocationManager()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -20,6 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = ViewController() // 특정 ViewController
         window?.makeKeyAndVisible()
+        
+        if let location = launchOptions?[.location] as? [AnyHashable: Any] {
+            print(location)
+        }
+        
         return true
     }
     
