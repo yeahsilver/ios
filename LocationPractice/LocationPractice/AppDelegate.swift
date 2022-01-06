@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreLocation
+import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,8 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = ViewController() // 특정 ViewController
         window?.makeKeyAndVisible()
         
+        let notification = UNUserNotificationCenter.current()
+        notification.requestAuthorization(options: [.alert, .badge, .sound]) { isSuccess, error in
+            if isSuccess {
+                print("사용자 승인")
+            }
+        }
+        
         if let location = launchOptions?[.location] as? [AnyHashable: Any] {
-            print(location)
+            
         }
         
         return true
@@ -39,8 +47,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return
         }
         
-        print("available")
+        UNUserNotificationCenter.current().getNotificationSettings() { settings in
+            if settings.authorizationStatus == UNAuthorizationStatus.authorized {
+                print("알람 허용")
+                
+                let content = UNMutableNotificationContent()
+                content.badge = 1
+                content.sound = UNNotificationSound.default
+                content.title = "백그라운드 처리"
+                content.body = "백그라운드가 시작되었습니다."
+                
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+                
+                let request = UNNotificationRequest(identifier: "BackgroundNotification", content: content, trigger: trigger)
+                UNUserNotificationCenter.current().add(request)
+            }
+        }
+        
         locationSerivces.startMonitoringSignificantLocationChanges()
     }
 }
-
