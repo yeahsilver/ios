@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  RxSwiftTest
 //
-//  Created by 허예은 on 2022/01/10.
+//  Created by mac on 2022/01/11.
 //
 
 import UIKit
