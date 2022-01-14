@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setup(pieChartView: pieChartView)
         setLayout()
-        setDataCount(13, range: 5)
+        setDataCount(5, range: 5)
         // Do any additional setup after loading the view.
     }
     
@@ -54,17 +54,14 @@ class ViewController: UIViewController {
         
         chartView.drawHoleEnabled = true
         chartView.rotationAngle = 0
-        chartView.rotationEnabled = true
+        chartView.rotationEnabled = false
         chartView.highlightPerTapEnabled = true
-        chartView.animate(yAxisDuration: 0.5)
-        let l = chartView.legend
-        l.horizontalAlignment = .right
-        l.verticalAlignment = .top
-        l.orientation = .vertical
-        l.drawInside = false
-        l.xEntrySpace = 7
-        l.yEntrySpace = 0
-        l.yOffset = 0
+        
+//        chartView.drawEntryLabelsEnabled = !chartView.drawEntryLabelsEnabled
+        chartView.animate(xAxisDuration: 1.4, easingOption: .easeOutBack)
+        chartView.setNeedsDisplay()
+        
+        chartView.legend.enabled = false
     }
     
     private func setLayout() {
@@ -96,6 +93,8 @@ class ViewController: UIViewController {
             + ChartColorTemplates.pastel()
             + [UIColor(red: 51/255, green: 181/255, blue: 229/255, alpha: 1)]
         
+        set.sliceSpace = 2
+        
         let data = PieChartData(dataSet: set)
         
         let pFormatter = NumberFormatter()
@@ -112,4 +111,3 @@ class ViewController: UIViewController {
         pieChartView.highlightValues(nil)
     }
 }
-
