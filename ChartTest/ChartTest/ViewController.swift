@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         chartView.highlightPerTapEnabled = true
         
 //        chartView.drawEntryLabelsEnabled = !chartView.drawEntryLabelsEnabled
-        chartView.animate(xAxisDuration: 1.4, easingOption: .easeOutBack)
+        chartView.animate(xAxisDuration: 0.5, easingOption: .easeInCirc)
         chartView.setNeedsDisplay()
         
         chartView.legend.enabled = false
