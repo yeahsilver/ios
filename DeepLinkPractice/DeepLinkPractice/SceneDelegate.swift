@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  deeplink_test
+//  DeepLinkPractice
 //
 //  Created by mac on 2022/01/17.
 //
