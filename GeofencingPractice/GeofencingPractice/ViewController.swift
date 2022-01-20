@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  RxSwiftTest
+//  GeofencingPractice
 //
-//  Created by mac on 2022/01/11.
+//  Created by 허예은 on 2022/01/20.
 //
 
 import UIKit
@@ -13,7 +13,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
+
 
 }
 
