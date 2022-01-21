@@ -14,6 +14,7 @@
 		9604C47627999AC500DFD8C5 /* GeofencingPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9604C47427999AC500DFD8C5 /* GeofencingPractice.xcdatamodeld */; };
 		9604C47827999AC600DFD8C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9604C47727999AC600DFD8C5 /* Assets.xcassets */; };
 		9604C47B27999AC600DFD8C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9604C47927999AC600DFD8C5 /* LaunchScreen.storyboard */; };
+		9604C4832799BE3600DFD8C5 /* MockLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604C4822799BE3600DFD8C5 /* MockLocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9604C47727999AC600DFD8C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9604C47A27999AC600DFD8C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9604C47C27999AC600DFD8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9604C4822799BE3600DFD8C5 /* MockLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				9604C47927999AC600DFD8C5 /* LaunchScreen.storyboard */,
 				9604C47C27999AC600DFD8C5 /* Info.plist */,
 				9604C47427999AC500DFD8C5 /* GeofencingPractice.xcdatamodeld */,
+				9604C4822799BE3600DFD8C5 /* MockLocationService.swift */,
 			);
 			path = GeofencingPractice;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9604C47027999AC500DFD8C5 /* ViewController.swift in Sources */,
+				9604C4832799BE3600DFD8C5 /* MockLocationService.swift in Sources */,
 				9604C46C27999AC500DFD8C5 /* AppDelegate.swift in Sources */,
 				9604C46E27999AC500DFD8C5 /* SceneDelegate.swift in Sources */,
 				9604C47627999AC500DFD8C5 /* GeofencingPractice.xcdatamodeld in Sources */,
