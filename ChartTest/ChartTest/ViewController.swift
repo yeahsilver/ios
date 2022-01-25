@@ -41,8 +41,8 @@ class ViewController: UIViewController {
     func setup(pieChartView chartView: PieChartView) {
         chartView.usePercentValuesEnabled = true
         chartView.drawSlicesUnderHoleEnabled = false
-        chartView.holeRadiusPercent = 0.48
-        chartView.transparentCircleRadiusPercent = 0.51
+        chartView.holeRadiusPercent = 0.0
+        chartView.transparentCircleRadiusPercent = 0.0
         chartView.chartDescription?.enabled = false
         chartView.setExtraOffsets(left: 5, top: 10, right: 5, bottom: 5)
         
