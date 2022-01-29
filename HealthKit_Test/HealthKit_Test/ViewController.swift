@@ -122,7 +122,7 @@ class ViewController: UIViewController {
             if error != nil {
                 print("something went wrong")
             } else if let quantity = statistics?.sumQuantity() {
-                value = quantity.doubleValue(for: HKUnit.mile())
+                value = quantity.doubleValue(for: HKUnit.meter())
             }
             
             print(value)
