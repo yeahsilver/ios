@@ -87,6 +87,9 @@ class ViewController: UIViewController {
                         let start = self?.dateToStringOnlyTime(date: sleep!.startDate)
                         let end = self?.dateToStringOnlyTime(date: sleep!.endDate)
                         
+                        let currentTimeInterval = sleep!.endDate.timeIntervalSince(sleep!.startDate)
+                        print(start, end, currentTimeInterval)
+                        
                         if i > 0 {
                             if previousStart == start && previousEnd == end {
                                 continue
