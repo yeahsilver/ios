@@ -37,6 +37,10 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didStartMonitoringFor region: CLRegion) {
+        print(region)
+    }
+    
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         let status = locationManager.authorizationStatus
         
@@ -87,5 +91,4 @@ extension ViewController: CLLocationManagerDelegate {
         print(visit.departureDate, visit.arrivalDate)
     }
 }
-
 

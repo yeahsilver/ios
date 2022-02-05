@@ -51,6 +51,4 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         print(userInfo)
         completionHandler()
     }
-    
-    
 }
