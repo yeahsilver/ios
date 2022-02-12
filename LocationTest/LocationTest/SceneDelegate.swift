@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  LocationTest
 //
-//  Created by mac on 2022/02/04.
+//  Created by mac on 2022/02/12.
 //
 
 import UIKit

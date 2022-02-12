@@ -2,13 +2,14 @@
 //  AppDelegate.swift
 //  LocationTest
 //
-//  Created by mac on 2022/02/04.
+//  Created by mac on 2022/02/12.
 //
 
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -19,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 application.registerForRemoteNotifications()
             }
         }
+        application.registerForRemoteNotifications()
         return true
     }
 
@@ -39,16 +41,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        
-        let userInfo = notification.request.content.userInfo
-        print(userInfo)
         completionHandler([.badge, .sound])
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        
-        let userInfo = response.notification.request.content.userInfo
-        print(userInfo)
-        completionHandler()
     }
 }
