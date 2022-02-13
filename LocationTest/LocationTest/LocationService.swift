@@ -29,7 +29,7 @@ class LocationService: NSObject {
 }
 
 extension LocationService {
-    func notification(_ title: String = "Wolley 테스트", body: String) {
+    func notification(_ title: String = "테스트", body: String) {
         let notificationCenter = UNUserNotificationCenter.current()
         
         notificationCenter.getNotificationSettings() { settings in
