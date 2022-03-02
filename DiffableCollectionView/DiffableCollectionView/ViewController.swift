@@ -33,9 +33,10 @@ class ViewController: UIViewController {
     }
     
     private func initDataSource() {
-        collectionView.register(UICollectionView.self, forCellWithReuseIdentifier: "cell")
+        collectionView.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         dataSrouce = UICollectionViewDiffableDataSource<Section, String>(collectionView: self.collectionView, cellProvider: { [weak self] collectionView, indexPath, value in
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? MyCollectionViewCell else { return UICollectionViewCell() }
+            cell.setLabel(text: value)
             return cell
         })
         
@@ -51,12 +52,15 @@ extension ViewController {
     }
     
     private func createCollectionView() -> UICollectionView {
-        let collectionView = UICollectionView()
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createCollectionViewLayout())
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(collectionView)
         return collectionView
     }
     
     private func createCollectionViewLayout() -> UICollectionViewLayout {
-        let layout = UICollectionViewCompositionalLayout { [weak self] (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection in
+        let layout = UICollectionViewCompositionalLayout { (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection in
             
             let contentSize = layoutEnvironment.container.effectiveContentSize
             let columns = contentSize.width > 800 ? 3 : 2
@@ -83,12 +87,13 @@ extension ViewController {
     }
     
     private func style() {
-        collectionView.collectionViewLayout = createCollectionViewLayout()
-        
+        navigationController?.isNavigationBarHidden = false
         navigationItem.searchController = searchController
         navigationItem.searchController?.searchResultsUpdater = self
         navigationItem.title = "Search"
         navigationItem.hidesSearchBarWhenScrolling = false
+        
+        
     }
     
     private func layout() {
