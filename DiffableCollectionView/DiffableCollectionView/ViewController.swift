@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     // MARK: Properties
     private var contents = ["Apple", "Banana", "Camera", "Dog", "Eat", "Feat", "Goose"]
     private var dataSrouce: UICollectionViewDiffableDataSource<Section, String>!
+    
     private var isFiltering: Bool {
         let searchController = navigationItem.searchController
         let isActive = searchController?.isActive ?? false
@@ -54,7 +55,7 @@ extension ViewController {
     private func createCollectionView() -> UICollectionView {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createCollectionViewLayout())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        
+        collectionView.delegate = self
         view.addSubview(collectionView)
         return collectionView
     }
@@ -92,8 +93,6 @@ extension ViewController {
         navigationItem.searchController?.searchResultsUpdater = self
         navigationItem.title = "Search"
         navigationItem.hidesSearchBarWhenScrolling = false
-        
-        
     }
     
     private func layout() {
@@ -124,6 +123,10 @@ extension ViewController: UISearchResultsUpdating {
         let text = searchController.searchBar.text
         self.performQuery(with: text)
     }
+}
+
+extension ViewController: UICollectionViewDelegate {
+    +
 }
 
 // MARK: Enum
