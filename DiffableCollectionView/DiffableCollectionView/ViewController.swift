@@ -30,7 +30,6 @@ class ViewController: UIViewController {
         layout()
         initDataSource()
         performQuery(with: nil)
-        // Do any additional setup after loading the view.
     }
     
     private func initDataSource() {
@@ -126,7 +125,8 @@ extension ViewController: UISearchResultsUpdating {
 }
 
 extension ViewController: UICollectionViewDelegate {
-    +
+    
+    
 }
 
 // MARK: Enum
@@ -143,6 +143,9 @@ class MyCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         layout()
+        
+        let interaction = UIContextMenuInteraction(delegate: self)
+        contentView.addInteraction(interaction)
     }
     
     required init?(coder: NSCoder) {
@@ -165,5 +168,18 @@ class MyCollectionViewCell: UICollectionViewCell {
     
     func setLabel(text: String) {
         contentLabel.text = text
+    }
+}
+
+
+extension MyCollectionViewCell: UIContextMenuInteractionDelegate {
+    func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration? {
+        return UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { (_: [UIMenuElement]) -> UIMenu? in
+            let btn1 = UIAction(title: "좋아요", image: UIImage(systemName: "hand.thumbsup")) { (UIAction) in
+                    print("좋아요 클릭됨")
+            }
+                        
+            return UIMenu(children: [btn1])
+        }
     }
 }
