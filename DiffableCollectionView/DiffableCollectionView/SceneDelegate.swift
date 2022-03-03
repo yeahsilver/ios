@@ -21,7 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let rootVC = ViewController()
         let navVC = UINavigationController(rootViewController: rootVC)
-        navVC.navigationBar.backgroundColor = .white
         self.window?.rootViewController = navVC
         window?.makeKeyAndVisible()
     }

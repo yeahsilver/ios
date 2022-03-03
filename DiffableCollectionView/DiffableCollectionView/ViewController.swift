@@ -10,7 +10,9 @@ import UIKit
 class ViewController: UIViewController {
     // MARK: Properties
     private var contents = ["Apple", "Banana", "Camera", "Dog", "Eat", "Feat", "Goose"]
-    private var dataSrouce: UICollectionViewDiffableDataSource<Section, String>!
+    static let shared = ViewController()
+    var dataSource: UICollectionViewDiffableDataSource<Section, String>!
+   
     
     private var isFiltering: Bool {
         let searchController = navigationItem.searchController
@@ -34,13 +36,13 @@ class ViewController: UIViewController {
     
     private func initDataSource() {
         collectionView.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-        dataSrouce = UICollectionViewDiffableDataSource<Section, String>(collectionView: self.collectionView, cellProvider: { [weak self] collectionView, indexPath, value in
+        dataSource = UICollectionViewDiffableDataSource<Section, String>(collectionView: self.collectionView, cellProvider: { [weak self] collectionView, indexPath, value in
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? MyCollectionViewCell else { return UICollectionViewCell() }
             cell.setLabel(text: value)
             return cell
         })
         
-        collectionView.dataSource = dataSrouce
+        collectionView.dataSource = dataSource
     }
 }
 
@@ -113,7 +115,7 @@ extension ViewController {
         var snapshot = NSDiffableDataSourceSnapshot<Section, String>()
         snapshot.appendSections([.main])
         snapshot.appendItems(filtered)
-        dataSrouce.apply(snapshot, animatingDifferences: true)
+        dataSource.apply(snapshot, animatingDifferences: true)
     }
 }
 
